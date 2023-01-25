@@ -37,8 +37,6 @@ ENV PATH "${NEO4J_HOME}"/bin:$PATH
 
 WORKDIR "${NEO4J_HOME}"
 
-VOLUME /data /logs
-
 EXPOSE 7474 7473 7687
 
 ENTRYPOINT ["tini", "-g", "--", "/startup/docker-entrypoint.sh"]
